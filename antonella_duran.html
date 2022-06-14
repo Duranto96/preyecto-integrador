@@ -20,9 +20,9 @@ rel="stylesheet">
       alt="logo nexos" / class="logo">
 
       <ul class="listanav">
-        <li>Nosotros</li>
-        <li>Noticias</li>
-        <li>Ayuda</li>
+        <li><a class="sr-only-focusable" href="#nosotros">Nosotros</a></li>
+        <li><a class="sr-only-focusable" href="#noticias">Noticias</a></li>
+        <li><a class="sr-only-focusable" href="#ayuda">Ayuda</a></li>
       </ul>
 
       <button id="myBtn" class="boton">INGRESAR</button>
@@ -33,7 +33,7 @@ rel="stylesheet">
         <p>Fomentemos el vínculo entre empresas y organizaciones civiles para generar un impacto postivo en la sociedad <br>
         Descubrí diferentes maneras de involucrar tu organización con la sociedad.</p>
     </header>
-<article class="art1">
+<article class="art1" id="nosotros">
     <section class="sec1">      
      <div class="imgsec1"></div>
        <div class="seccion1b"><h2>Soluciones para empresas</h2>
@@ -82,10 +82,10 @@ rel="stylesheet">
 </section>
 </article>
 
-<article class="art5a">
+<article class="art5a"  id="noticias">
 <section class="sec5a">
   <h1 class="tituloNoticias">Noticias</h1>
-  <h6 class="subrayado">Ver todo</h6>
+  <a href="https://elpais.com/noticias/voluntariado/"><h6 class="link"><u>Ver todo</u></h6></a>
 </section>
 </article>
 
@@ -99,13 +99,13 @@ rel="stylesheet">
           <span class="material-icons">
             date_range
             </span>
-          <small class="text-muted">10/08/2021</small> 
+          <small style="color:#5227cc">10/08/2021</small> 
         </div>
           <div class="encabezadoCardB">
           <span class="material-icons">
             schedule
             </span>            
-            <small class="text-muted">4 min</small>
+            <small style="color:#5227cc">4 min</small>
           </div>
         </div>
         <h5 class="card-title"><b>Fundappas abre nuevo centro</b></h5>
@@ -122,13 +122,13 @@ rel="stylesheet">
           <span class="material-icons">
             date_range
             </span>
-          <small class="text-muted">10/08/2021</small> 
+          <small style="color:#5227cc">10/08/2021</small> 
         </div>
           <div class="encabezadoCardB">
           <span class="material-icons">
             schedule
             </span>            
-            <small class="text-muted">4 min</small>
+            <small style="color:#5227cc">4 min</small>
           </div>
         </div>
         <h5 class="card-title"><b>DIRECTV y TECHO inaguraron un espacio deportivo</b></h5>
@@ -137,20 +137,20 @@ rel="stylesheet">
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top" src="C:\Users\Usuario\Desktop\Senpai\Proyecto_integrador_1\Descargas\card3voluntarios..jpg" alt="Card image cap">
+      <img class="card-img-top" src="C:\Users\Usuario\Desktop\Senpai\Proyecto_integrador_1\Descargas\card3voluntarios..jpg" alt="Voluntarios">
       <div class="card-body">
         <div class="encabezadoCard">
           <div class="encabezadoCardA">
           <span class="material-icons">
             date_range
             </span>
-          <small class="text-muted">10/08/2021</small> 
+          <small style="color:#5227cc">10/08/2021</small> 
         </div>
           <div class="encabezadoCardB">
           <span class="material-icons">
             schedule
             </span>            
-            <small class="text-muted">3 min</small>
+            <small style="color:#5227cc">3 min</small>
           </div>
         </div>
         <h5 class="card-title"><b>Jornada de voluntarios</b></h5>
@@ -159,20 +159,20 @@ rel="stylesheet">
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top" src="C:\Users\Usuario\Desktop\Senpai\Proyecto_integrador_1\Descargas\card4techo..jpg" alt="Card image cap">
+      <img class="card-img-top" src="C:\Users\Usuario\Desktop\Senpai\Proyecto_integrador_1\Descargas\card4techo..jpg" alt="Trabajadores">
       <div class="card-body">
         <div class="encabezadoCard">
           <div class="encabezadoCardA">
           <span class="material-icons">
             date_range
             </span>
-          <small class="text-muted">10/08/2021</small> 
+          <small style="color:#5227cc">10/08/2021</small> 
         </div>
           <div class="encabezadoCardB">
           <span class="material-icons">
             schedule
             </span>            
-            <small class="text-muted">5 min</small>
+            <small style="color:#5227cc">5 min</small>
           </div>
         </div>
         <h5 class="card-title"><b>Lanzamiento del plan Tu Techo</b></h5>
@@ -189,7 +189,7 @@ rel="stylesheet">
 </section>
 </article>
 
-<article class="art6b">
+<article class="art6b" id="ayuda">
   <section class="sec6b">
   <div><h1 class="textCenter">Contacto</h1>
   <form class="flexColumn">
@@ -244,17 +244,39 @@ rel="stylesheet">
 
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close">&times;</span>
-    <!-- <p>contenidoooooooo</p> -->
-    <article>
-      <img src="materiales/imagen-modal.JPG" alt="manos">
-      <div class="flexColumn">
-        <div class="login-left"></div>
-        <div class="login.right">
-          <h1>MI EMPRESA</h1>
-          <P>Breve explicación a lo que nos referimos</P>
+    
+    <div class="img-modal"></div>
+    <article>    
+      <div class="flexColumn">  
+        <div class="close-padre">
+          
+          <span class="close">&times;</span>
+        </div>   
+      <div class="flexColumn-modal">
+       
+      <h2 class="texto-modal"><b>REGISTRAR</b></h2>
+      <div class="login">
+        <div class="login-left">
+          <div class="icono-login-padre"><img class="icono-login" src="../preyecto-integrador/Materiales/icono-maletin.png" alt="ícono maletín"></div>
         </div>
+        <div class="login.right">
+          <h3 class="texto-modal" style="color: #529bff;">MI EMPRESA</h3>
+          <P class="text-muted parrafo-login">Breve explicación a lo que nos referimos.</P>
+        </div>
+        <div class="ver-mas-padre"><img class="ver-mas" src="../preyecto-integrador/Materiales/icono-flecha.png" alt="ícono flecha"></div>
+      </div>
 
+      <div class="flexRow login2">
+        <div class="login-left2">
+          <div class="icono-login-padre"><img class="icono-login" src="../preyecto-integrador/Materiales/icono-persona.png" alt="ícono maletín"></div>
+        </div>
+        <div class="login.right">
+          <h3 class="texto-modal" style="color: #5227cc;">MI ORGANIZACIÓN</h3>
+          <P class="text-muted parrafo-login">Estamos para ayudarlos a tener éxito.</P>
+        </div>
+        <div class="ver-mas-padre"><img class="ver-mas" src="../preyecto-integrador/Materiales/icono-flecha.png" alt="ícono flecha"></div>
+      </div>
+    </div>
       </div>
     </article>
   </div>

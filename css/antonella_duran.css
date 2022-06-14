@@ -53,8 +53,6 @@ nav {
   top: 0;
   left: 0;
   width: 98%;
-  /* position: fixed; */
-  color: #5227cc;
   display: flex;
   flex-direction: row;
   grid-area: nav;
@@ -74,6 +72,11 @@ header {
   align-items: center;
   color: whitesmoke;
   text-align: center;
+}
+
+.sr-only-focusable {
+  color: #5227cc;
+  text-decoration: none;
 }
 
 .titulo {
@@ -265,9 +268,10 @@ header {
   align-items: center;
 }
 
-.subrayado {
-  text-decoration: underline;
-  margin-bottom: 3%;
+.link {
+  margin-bottom: 20px;
+  color: white;
+  text-decoration: none;
 }
 
 .tituloNoticias {
@@ -335,14 +339,13 @@ header {
 
 .imagenContacto {
   background-image: url(../Materiales/laptop-escritorio.jpg);
-  width: 250px;
+  width: 550px;
   height: 250px;
   background-size: 100%;
-  /* aspect-ratio: 24 / 9; */
   margin-top: 5%;
   margin-left: 5%;
   background-position: 0px -92px;
-  max-width: 100%;
+  background-repeat: no-repeat;
 }
 
 .art6b {
@@ -444,19 +447,24 @@ hr {
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
+  padding-right: 10px;
+  padding-left: 0px;
   border: 1px solid #888;
-  width: 80%;
+  width: 70%;
   display: flex;
-  align-items: flex-end;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 /* The Close Button */
 .close {
   color: #aaaaaa;
-  float: right;
+  float: inherit;
   font-size: 28px;
   font-weight: bold;
+  margin-bottom: 20px;
+  align-self: flex-end;
 }
 
 .close:hover,
@@ -464,6 +472,94 @@ hr {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.login-left {
+  background-color: #17a2bb;
+  width: 70px;
+  height: 150px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.login-right {
+  width: 300px;
+  height: 150px;
+}
+
+.flexColumn-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  padding-right: 40px;
+}
+
+.login {
+  box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin: 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icono-login {
+  max-width: 30px;
+  margin-top: 25px;
+}
+
+.icono-login-padre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50%;
+}
+
+.ver-mas-padre {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
+
+.login2 {
+  margin-top: 10%;
+  align-items: center;
+  box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin: 5%;
+  width: 90%;
+}
+
+.login-left2 {
+  background-color: #5227cc;
+  width: 70px;
+  height: 150px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.img-modal {
+  height: 605px;
+  width: 50%;
+  background-size: 120%;
+  background-image: url(../Materiales/imagen-modal.JPG);
+  background-position: -45px -55px;
+  background-repeat: no-repeat;
+}
+
+.close-padre {
+  display: flex;
+  align-self: flex-end;
+}
+
+.material-icons {
+  color: #5227cc;
 }
 
 @media only screen and (max-width: 390px) {
@@ -484,9 +580,20 @@ hr {
       "footer";
   }
 
-  nav {
+  .listanav {
     display: none;
   }
+
+  .boton {
+    margin-right: 20px;
+    margin-top: 4px;
+  }
+
+  .logo {
+    margin-top: 4px;
+    margin-left: -10px;
+  }
+
   .art1 {
     padding-top: 5%;
     padding-left: 2%;
@@ -536,6 +643,10 @@ hr {
     width: 350px;
     height: 100px;
     background-size: 100%;
+  }
+
+  .card-text {
+    display: none;
   }
 
   nav {
@@ -599,5 +710,45 @@ hr {
 
   .nexos {
     margin-top: 5px;
+  }
+
+  .img-modal {
+    display: none;
+  }
+
+  .modal-content {
+    width: 95%;
+    padding-right: 0px;
+    justify-content: center;
+  }
+
+  .login-left {
+    width: 80px;
+    height: 120px;
+  }
+
+  .login-left2 {
+    width: 90px;
+    height: 120px;
+  }
+
+  .parrafo-login {
+    display: none;
+  }
+
+  .flexColumn-modal {
+    padding-right: 0px;
+  }
+
+  .texto-modal {
+    font-size: large;
+    text-align: center;
+  }
+
+  .icono-login {
+    margin: -8px;
+    margin-top: 12px;
+    padding-right: 19px;
+    max-width: 40px;
   }
 }
